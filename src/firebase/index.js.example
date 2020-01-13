@@ -1,0 +1,26 @@
+
+import firebase from 'firebase'
+import 'firebase/firestore'
+
+firebase.initializeApp({
+  //you will need to ease this and add your own SDK credentials...
+
+
+
+  apiKey: "super secret don't tell",
+  authDomain: "firestore-tutoral-the-first.firebaseapp.com",
+  databaseURL: "https://firestore-tutoral-the-first.firebaseio.com",
+  projectId: "firestore-tutoral-the-first",
+  storageBucket: "firestore-tutoral-the-first.appspot.com",
+  messagingSenderId: "super secret don't tell",
+  appId: "super secret don't tell",
+  measurementId: "super secret don't tell"
+});
+
+
+let db = firebase.firestore()
+
+
+export default {
+  firebase, db
+}
